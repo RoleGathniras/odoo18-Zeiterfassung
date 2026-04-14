@@ -1,0 +1,63 @@
+# Python
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Odoo
+
+*.log
+*.pid
+
+# VS Code / IDEs
+
+.vscode/
+.idea/
+
+# Mac / Linux
+
+.DS_Store
+
+# Environment / Secrets
+
+.env
+.env.*
+*.env
+
+# Docker Volumes (lokale Daten!)
+
+postgres_data/
+odoo_data/
+
+# Backup / Temp
+
+*.bak
+*.tmp
+
+# Node (falls später genutzt)
+
+node_modules/
+
+# Coverage / Testing
+
+.coverage
+htmlcov/
+
+# Compiled files
+
+*.so
+
+# Logs
+
+logs/
+*.log
+
+# Database dumps
+
+*.sql
+*.dump
+
+# PyCharm
+
+*.iml

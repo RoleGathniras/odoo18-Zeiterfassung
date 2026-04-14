@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_attendance_tree_compliance" model="ir.ui.view">
+        <field name="name">hr.attendance.list.compliance</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//list" position="inside">
+                <field name="worked_hours_raw"/>
+                <field name="break_required"/>
+                <field name="worked_hours_net"/>
+                <field name="violation"/>
+                <field name="violation_reason"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_attendance_form_compliance" model="ir.ui.view">
+        <field name="name">hr.attendance.form.compliance</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+             <group string="Compliance">
+                <field name="worked_hours" readonly="1"/>
+                <field name="worked_hours_raw" readonly="1"/>
+                <field name="worked_hours_odoo" readonly="1"/>
+                <field name="rule_id" readonly="1"/>
+                <field name="break_required" readonly="1"/>
+                <field name="worked_hours_net" readonly="1"/>
+                <field name="violation" readonly="1"/>
+                <field name="violation_reason" readonly="1"/>
+            </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
