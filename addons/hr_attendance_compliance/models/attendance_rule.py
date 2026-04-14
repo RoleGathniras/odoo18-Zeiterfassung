@@ -19,6 +19,11 @@ class HrAttendanceRule(models.Model):
         default=30,
         required=True,
     )
+    break_6h_grace_minutes = fields.Integer(
+        string="Kulanz nach 6h (Min.)",
+        default=15,
+        required=True,
+    )
 
     break_9h_threshold = fields.Float(
         string="Zusätzliche Pause ab mehr als X Stunden",

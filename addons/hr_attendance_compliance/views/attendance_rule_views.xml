@@ -9,6 +9,7 @@
                 <field name="active"/>
                 <field name="break_6h_threshold"/>
                 <field name="break_6h_minutes"/>
+                <field name="break_6h_grace_minutes"/>
                 <field name="break_9h_threshold"/>
                 <field name="break_9h_minutes"/>
                 <field name="break_9h_grace_minutes"/>
@@ -31,6 +32,7 @@
                     <group string="Pausenregel">
                         <field name="break_6h_threshold"/>
                         <field name="break_6h_minutes"/>
+                        <field name="break_6h_grace_minutes"/>
                         <field name="break_9h_threshold"/>
                         <field name="break_9h_minutes"/>
                         <field name="break_9h_grace_minutes"/>
